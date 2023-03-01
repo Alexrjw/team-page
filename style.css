@@ -168,7 +168,15 @@ figcaption{
     .div{
         display: block;
     }
-    
+    .div .h1 h1{
+        font-size: 30px;
+    }
+    .div .who h2{
+        font-size: 18px;
+    }
+    .div .who p{
+        font-size: 14px;
+    }
     .div div{
         margin-bottom: 2.375rem;
     }
@@ -198,8 +206,5 @@ figcaption{
     
     /* transform: translateX(200px); */
         font-size: .625rem;
-    }
-    .div>.who{
-        width: 80%;
     }
   }
