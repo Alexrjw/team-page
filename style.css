@@ -16,7 +16,7 @@ h1{
 }
 
 body{
-    width: 100%;
+    min-width: 100%;
     padding-top: 3em;
     display: flex;
     flex-direction: column;
@@ -60,6 +60,7 @@ figcaption{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
+    width: 100%;
 }
 .card2, .card5{
     transform: translateY(60px);
@@ -109,14 +110,13 @@ figcaption{
     .section{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        width: 100%;
     }
     .card{
         margin-bottom: 4rem;
     }
-    .card1, .card3, .card5{
+    /* .card1, .card3, .card5{
         align-self: start;
-    }
+    } */
     .card5{
         transform: translateY(0);
     }
@@ -143,10 +143,8 @@ figcaption{
         font-size: .875rem;
     }
   }
-  @media  only screen and (max-width: 478px) {
-    body{
-        justify-content: center;
-        flex-direction: column;        
+  @media (max-width: 478px) {
+    body{       
         padding:  1rem 1rem;
     }
     .div{
@@ -157,7 +155,6 @@ figcaption{
     }
     .section{
         grid-template-columns: repeat(2, 1fr);
-        width: 100%;
     }
     .card1, .card3, .card5{
         align-self: start;
